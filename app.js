@@ -1,6 +1,6 @@
 do {
  var options=0;
-  var menu = '1. Criptografar\n2. Descriptografar\n3. Mostrar Resultado no console\n';
+  var menu = '1. Criptografar\n2. Descriptografar\n3. SAIR\n';
   options = parseInt(prompt(menu));
 
   if (options === 1) {
@@ -36,7 +36,8 @@ do {
 }
 console.log (cipher());
 cipher ();
-alert ("Sua frase decifrada: "+ cipher ());
+document.getElementById('crip').innerHTML = ("Sua frase decifrada: "+ cipher ());
+// alert ("Sua frase decifrada: "+ cipher ());
 
 }
 
@@ -70,7 +71,8 @@ if (options === 2) {
 }
 console.log (decipher());
 decipher();
-alert ("Sua frase decifrada: "+ decipher());
+// alert ("Sua frase decifrada: "+ decipher());
+document.getElementById('descrip').innerHTML = ("Sua frase decifrada: "+ decipher());
 }
 
 }while (options !== 3);
