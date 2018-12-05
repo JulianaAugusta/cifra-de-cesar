@@ -1,6 +1,6 @@
 # Cifra de Cesar
 
-###Projeto final do sprint 1 do Bootcamp da Laboratoria
+Projeto final do sprint 1 do Bootcamp da Laboratoria
 
 Crie uma página web que peça, por meio de um prompt(), uma frase para o usuário e retorne a mesma mensagem criptografada de acordo com o a Cifra de César. Seu programa deve ser capaz de criptografar e descriptografar letras maiúsculas e minúsculas.
 
