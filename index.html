@@ -3,25 +3,34 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Cifra de César</title>
-    <link rel="stylesheet" href="cifra-de-cesar\main.css">
+    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Cifra de César</title>
 </head>
 
 <body>
-
     <div class="container jumbotron">
-        <h1>Cifra de César</h1>
+        <h1 class="text-center">Cifra de César</h1>
         <div>
-            <label for="">Digite uma palavra ou um texto para criptografar:</label>
+            <label for="">Digite uma palavra ou um texto:</label>
             <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Digite aqui" aria-label="Recipient's username" aria-describedby="button-addon2">
-                <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
-                </div>
+                <input type="text" id="input-text-cipher-decipher" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
+            </div>
+            <button class="btn btn-primary" type="button" id="button-cipher" onclick="cipherText()">Criptografar</button>
+            <button class="btn btn-warning" type="button" id="button-decipher" onclick="decipherText()">Descriptografar</button>
+            <button class="btn btn-danger text-right" type="button" id="button-cipher" onclick="cleanText()">Limpar</button>
+            <!-- <div class="text-right">
+
+            </div> -->
+        </div>
+        <div class="p-3">
+            <label for="">O resultado é:</label>
+            <div class="input-group">
+                <textarea class="form-control" id="cipher-result" aria-label="With textarea"></textarea>
             </div>
         </div>
     </div>
+    <div class="jumbotron-edit"></div>
 
     <script type="text/javascript" src="app.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
