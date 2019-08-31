@@ -23,11 +23,11 @@ Crie uma página web que peça, por meio de um prompt(), uma frase para o usuár
  * É exibido o resultado na caixa de texto.
 5. Ao clicar no botão de limpar o texto o input é limpo.
 ---
-##Refactory
+## Refactory
 1. Agora implementei a página em HTML5 e o usuário irá interagir com ela. Tem uma nova aparência e não uso mais o prompt para realizar ações.
 2. O código foi melhorado e o algoritmo mudado. Há funcionalidade nos botões.
 3. É código vanilla! Todo em JavaScript puro!
 
 ---
-##Roadmap
+## Roadmap
 1. Implementação de uma cifra que aceite acentuação;
