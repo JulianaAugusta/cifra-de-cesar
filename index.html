@@ -5,28 +5,35 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
     <title>Cifra de César</title>
 </head>
 
 <body>
-    <div class="container jumbotron">
+    <div class="container jumbotron card card-image lighten-5 shadow-sm p-3 mb-5 mt-5 bg-white rounded-0 jumb-config">
         <h1 class="text-center">Cifra de César</h1>
-        <div>
+        <div class="mt-3">
             <label for="">Digite uma palavra ou um texto:</label>
             <div class="input-group mb-3">
-                <input type="text" id="input-text-cipher-decipher" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <input type="text" id="input-text-cipher-decipher" class="form-control" placeholder="Escreva seu texto aqui." aria-label="Recipient's username" aria-describedby="button-addon2">
             </div>
-            <button class="btn btn-primary" type="button" id="button-cipher" onclick="cipherText()">Criptografar</button>
-            <button class="btn btn-warning" type="button" id="button-decipher" onclick="decipherText()">Descriptografar</button>
-            <button class="btn btn-danger text-right" type="button" id="button-cipher" onclick="cleanText()">Limpar</button>
-            <!-- <div class="text-right">
-
-            </div> -->
+            <div class="p-2">
+                <button class="btn btn-outline-primary btn-lg btn-block" type="button" id="button-cipher" onclick="cipherText()">Criptografar
+                </button>
+            </div>
+            <div class="p-2">
+                <button class="btn btn-outline-primary btn-lg btn-block" type="button" id="button-decipher" onclick="decipherText()">Descriptografar
+                </button>
+            </div>
+            <div class="p-2">
+                <button class="btn btn-outline-danger btn-lg btn-block" type="button" id="button-cipher" onclick="cleanText()">Limpar
+                </button>
+            </div>
         </div>
-        <div class="p-3">
+        <div class="p-2">
             <label for="">O resultado é:</label>
             <div class="input-group">
-                <textarea class="form-control" id="cipher-result" aria-label="With textarea"></textarea>
+                <textarea class="form-control" id="cipher-result" placeholder="" aria-label="With textarea"></textarea>
             </div>
         </div>
     </div>

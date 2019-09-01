@@ -53,5 +53,6 @@ function decryptData(letter) {
 
 function cleanText() {
     document.getElementById('input-text-cipher-decipher').value = '';
+    document.getElementById('cipher-result').value = '';
     return
 }
